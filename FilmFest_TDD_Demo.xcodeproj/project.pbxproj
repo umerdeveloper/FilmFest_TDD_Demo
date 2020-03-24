@@ -81,11 +81,10 @@
 		CB1E23622429C9C4007070A7 /* FilmFest_TDD_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB1E238C2429D4F5007070A7 /* Supporting Files */,
 				CB1E238B2429CFDA007070A7 /* Model */,
 				CB1E23862429C9DD007070A7 /* Controller */,
-				CB1E23692429C9C4007070A7 /* Main.storyboard */,
-				CB1E236C2429C9C5007070A7 /* Assets.xcassets */,
-				CB1E236E2429C9C5007070A7 /* LaunchScreen.storyboard */,
+				CB1E238D2429D504007070A7 /* Views */,
 				CB1E23712429C9C5007070A7 /* Info.plist */,
 			);
 			path = FilmFest_TDD_Demo;
@@ -94,8 +93,9 @@
 		CB1E23792429C9C5007070A7 /* FilmFest_TDD_DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB1E238F2429D51F007070A7 /* Controller Testing */,
+				CB1E238E2429D513007070A7 /* Struct Testing */,
 				CB1E237C2429C9C5007070A7 /* Info.plist */,
-				CB1E23872429CE7C007070A7 /* MovieStructsTest.swift */,
 			);
 			path = FilmFest_TDD_DemoTests;
 			sourceTree = "<group>";
@@ -103,8 +103,6 @@
 		CB1E23862429C9DD007070A7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CB1E23632429C9C4007070A7 /* AppDelegate.swift */,
-				CB1E23652429C9C4007070A7 /* SceneDelegate.swift */,
 				CB1E23672429C9C4007070A7 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -116,6 +114,40 @@
 				CB1E23892429CFD3007070A7 /* Movie.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CB1E238C2429D4F5007070A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E236C2429C9C5007070A7 /* Assets.xcassets */,
+				CB1E23652429C9C4007070A7 /* SceneDelegate.swift */,
+				CB1E23632429C9C4007070A7 /* AppDelegate.swift */,
+				CB1E236E2429C9C5007070A7 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB1E238D2429D504007070A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E23692429C9C4007070A7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB1E238E2429D513007070A7 /* Struct Testing */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E23872429CE7C007070A7 /* MovieStructsTest.swift */,
+			);
+			path = "Struct Testing";
+			sourceTree = "<group>";
+		};
+		CB1E238F2429D51F007070A7 /* Controller Testing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Controller Testing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

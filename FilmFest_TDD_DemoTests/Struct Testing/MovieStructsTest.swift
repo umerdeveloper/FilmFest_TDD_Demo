@@ -20,7 +20,7 @@ class MovieStructsTest: XCTestCase {
         // call after test run
     }
     
-    // MARK: - custom methods
+    // MARK: - Custom Methods
     func testInit_MovieWithTitle() {
         let testMovie = Movie(title: "Generic Blockbuster")
         XCTAssertNotNil(testMovie)
@@ -29,11 +29,8 @@ class MovieStructsTest: XCTestCase {
     
     func testInit_TestMovieTitleAndReleaseDate() {
         let testMovie = Movie(title: "Romantic Comedy", releaseDate: "1987")
-        
         XCTAssertNotNil(testMovie)
         XCTAssertEqual(testMovie.releaseDate, "1987")
-        
-        
     }
     
 }
