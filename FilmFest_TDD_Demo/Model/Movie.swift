@@ -1,4 +1,4 @@
-struct Movie {
+struct Movie: Equatable {
     let title: String
     let releaseDate: String?
     
@@ -6,5 +6,4 @@ struct Movie {
         self.title = title
         self.releaseDate = releaseDate
     }
-    
 }
