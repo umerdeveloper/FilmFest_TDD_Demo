@@ -13,7 +13,8 @@
 		CB1E236B2429C9C4007070A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1E23692429C9C4007070A7 /* Main.storyboard */; };
 		CB1E236D2429C9C5007070A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1E236C2429C9C5007070A7 /* Assets.xcassets */; };
 		CB1E23702429C9C5007070A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1E236E2429C9C5007070A7 /* LaunchScreen.storyboard */; };
-		CB1E237B2429C9C5007070A7 /* FilmFest_TDD_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E237A2429C9C5007070A7 /* FilmFest_TDD_DemoTests.swift */; };
+		CB1E23882429CE7C007070A7 /* MovieStructsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E23872429CE7C007070A7 /* MovieStructsTest.swift */; };
+		CB1E238A2429CFD3007070A7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E23892429CFD3007070A7 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +37,9 @@
 		CB1E236F2429C9C5007070A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB1E23712429C9C5007070A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB1E23762429C9C5007070A7 /* FilmFest_TDD_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmFest_TDD_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB1E237A2429C9C5007070A7 /* FilmFest_TDD_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFest_TDD_DemoTests.swift; sourceTree = "<group>"; };
 		CB1E237C2429C9C5007070A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1E23872429CE7C007070A7 /* MovieStructsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStructsTest.swift; sourceTree = "<group>"; };
+		CB1E23892429CFD3007070A7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		CB1E23622429C9C4007070A7 /* FilmFest_TDD_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB1E238B2429CFDA007070A7 /* Model */,
 				CB1E23862429C9DD007070A7 /* Controller */,
 				CB1E23692429C9C4007070A7 /* Main.storyboard */,
 				CB1E236C2429C9C5007070A7 /* Assets.xcassets */,
@@ -91,8 +94,8 @@
 		CB1E23792429C9C5007070A7 /* FilmFest_TDD_DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				CB1E237A2429C9C5007070A7 /* FilmFest_TDD_DemoTests.swift */,
 				CB1E237C2429C9C5007070A7 /* Info.plist */,
+				CB1E23872429CE7C007070A7 /* MovieStructsTest.swift */,
 			);
 			path = FilmFest_TDD_DemoTests;
 			sourceTree = "<group>";
@@ -105,6 +108,14 @@
 				CB1E23672429C9C4007070A7 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB1E238B2429CFDA007070A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E23892429CFD3007070A7 /* Movie.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 					};
 					CB1E23752429C9C5007070A7 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = CB1E235F2429C9C4007070A7;
 					};
 				};
@@ -210,6 +222,7 @@
 			files = (
 				CB1E23682429C9C4007070A7 /* ViewController.swift in Sources */,
 				CB1E23642429C9C4007070A7 /* AppDelegate.swift in Sources */,
+				CB1E238A2429CFD3007070A7 /* Movie.swift in Sources */,
 				CB1E23662429C9C4007070A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB1E237B2429C9C5007070A7 /* FilmFest_TDD_DemoTests.swift in Sources */,
+				CB1E23882429CE7C007070A7 /* MovieStructsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +420,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 646XC4LJ39;
 				INFOPLIST_FILE = FilmFest_TDD_DemoTests/Info.plist;
@@ -418,6 +432,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.developers.FilmFest-TDD-DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilmFest_TDD_Demo.app/FilmFest_TDD_Demo";
@@ -429,6 +444,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 646XC4LJ39;
 				INFOPLIST_FILE = FilmFest_TDD_DemoTests/Info.plist;
