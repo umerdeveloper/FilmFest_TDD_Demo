@@ -79,9 +79,7 @@
 		CB1E23622429C9C4007070A7 /* FilmFest_TDD_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				CB1E23632429C9C4007070A7 /* AppDelegate.swift */,
-				CB1E23652429C9C4007070A7 /* SceneDelegate.swift */,
-				CB1E23672429C9C4007070A7 /* ViewController.swift */,
+				CB1E23862429C9DD007070A7 /* Controller */,
 				CB1E23692429C9C4007070A7 /* Main.storyboard */,
 				CB1E236C2429C9C5007070A7 /* Assets.xcassets */,
 				CB1E236E2429C9C5007070A7 /* LaunchScreen.storyboard */,
@@ -97,6 +95,16 @@
 				CB1E237C2429C9C5007070A7 /* Info.plist */,
 			);
 			path = FilmFest_TDD_DemoTests;
+			sourceTree = "<group>";
+		};
+		CB1E23862429C9DD007070A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E23632429C9C4007070A7 /* AppDelegate.swift */,
+				CB1E23652429C9C4007070A7 /* SceneDelegate.swift */,
+				CB1E23672429C9C4007070A7 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
