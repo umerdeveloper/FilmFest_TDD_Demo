@@ -13,7 +13,6 @@ class MovieStructsTest: XCTestCase {
 
     override func setUp() {
         // call before test run
-        
     }
 
     override func tearDown() {
@@ -32,5 +31,7 @@ class MovieStructsTest: XCTestCase {
         XCTAssertNotNil(testMovie)
         XCTAssertEqual(testMovie.releaseDate, "1987")
     }
+    
+    
     
 }
