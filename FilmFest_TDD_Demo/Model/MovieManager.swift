@@ -11,18 +11,18 @@ class MovieManager {
             moviesToSeeArray.append(movie)
         }
     }
+    
     func movieAtIndex(index: Int) -> Movie {
         return moviesToSeeArray[index]
     }
+    func checkedOffMovieAtIndex(index: Int) -> Movie {
+        return moviesSeenArray[index]
+    }
+    
     func checkOffMovieAtIndex(index: Int) {
         guard index < moviesToSeeCount else { return }
         let checkedMovie = moviesToSeeArray.remove(at: index)
         moviesSeenArray.append(checkedMovie)
-    }
-    
-    func checkedOffMovieAtIndex(index: Int) -> Movie {
-        return moviesSeenArray[index]
-        
     }
     
     func clearArrays() {

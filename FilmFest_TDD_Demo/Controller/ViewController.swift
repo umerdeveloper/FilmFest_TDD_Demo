@@ -10,8 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableViewDesign()
+    }
+    
+    
+    func tableViewDesign() {
+        tableView.layer.cornerRadius = 20
+        tableView.backgroundColor = UIColor.clear.withAlphaComponent(0.1)
     }
 
 
