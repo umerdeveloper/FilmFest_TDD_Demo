@@ -22,6 +22,7 @@
 		CB5C4015242A530900E5A2F2 /* MovieLibraryDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C4014242A530900E5A2F2 /* MovieLibraryDataServiceTests.swift */; };
 		CB5C4018242A763E00E5A2F2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C4017242A763E00E5A2F2 /* MovieCell.swift */; };
 		CBDE20B8242C7AA100D1A764 /* MockExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE20B7242C7AA100D1A764 /* MockExtensions.swift */; };
+		CBDE20BB242C85CF00D1A764 /* MovieCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE20BA242C85CF00D1A764 /* MovieCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CB5C4014242A530900E5A2F2 /* MovieLibraryDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLibraryDataServiceTests.swift; sourceTree = "<group>"; };
 		CB5C4017242A763E00E5A2F2 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		CBDE20B7242C7AA100D1A764 /* MockExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExtensions.swift; sourceTree = "<group>"; };
+		CBDE20BA242C85CF00D1A764 /* MovieCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		CB1E23792429C9C5007070A7 /* FilmFest_TDD_DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBDE20B9242C85AE00D1A764 /* Test Views */,
 				CBDE20B6242C7A8E00D1A764 /* Mocks */,
 				CB5C4013242A52E300E5A2F2 /* Test Data Service */,
 				CB1E238F2429D51F007070A7 /* Test Controllers */,
@@ -201,6 +204,14 @@
 				CBDE20B7242C7AA100D1A764 /* MockExtensions.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CBDE20B9242C85AE00D1A764 /* Test Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBDE20BA242C85CF00D1A764 /* MovieCellTests.swift */,
+			);
+			path = "Test Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +334,7 @@
 				CB1E23912429D60B007070A7 /* MovieManagerTests.swift in Sources */,
 				CB1E23882429CE7C007070A7 /* MovieStructsTest.swift in Sources */,
 				CBDE20B8242C7AA100D1A764 /* MockExtensions.swift in Sources */,
+				CBDE20BB242C85CF00D1A764 /* MovieCellTests.swift in Sources */,
 				CB5C400F242A47C000E5A2F2 /* LibraryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,11 +27,18 @@ class MovieLibraryDataService: NSObject, UITableViewDataSource, UITableViewDeleg
         
         guard let movieManager = movieManager else { fatalError() }
         guard let librarySection = LibrarySection(rawValue: indexPath.section) else { fatalError() }
-        
         let movieData = librarySection.rawValue == 0 ? movieManager.movieAtIndex(index: indexPath.row): movieManager.checkedOffMovieAtIndex(index: indexPath.row)
+            cell.configMovieCell(movie: movieData)
+            return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let movieManager = movieManager else { fatalError() }
+        guard let librarySection = LibrarySection(rawValue: indexPath.section) else { fatalError() }
         
-        cell.configMovieCell(movie: movieData)
-        
-        return cell
+        if librarySection == .MovieToSee {
+            movieManager.checkOffMovieAtIndex(index: indexPath.row)
+            tableView.reloadData()
+        }
     }
 }

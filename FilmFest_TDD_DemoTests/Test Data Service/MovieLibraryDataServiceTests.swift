@@ -96,5 +96,16 @@ class MovieLibraryDataServiceTests: XCTestCase {
         let cell = tableViewMock.cellForRow(at: IndexPath(row: 0, section: 1)) as! MovieCellMock
         XCTAssertEqual(cell.movieData, darkComedy)
     }
+    
+    
+    func testCell_Selection_ShouldCheckOffSelectedMovie() {
+        sut.movieManager?.addMovie(movie: fairyTale)
+        sut.movieManager?.addMovie(movie: darkComedy)
+        libraryTableView.delegate?.tableView?(libraryTableView, didSelectRowAt: IndexPath(row: 0, section: 0))
+        XCTAssertEqual(sut.movieManager?.moviesToSeeCount, 1)
+        XCTAssertEqual(sut.movieManager?.moviesSeenCount, 1)
+        XCTAssertEqual(libraryTableView.numberOfRows(inSection: 0), 1)
+        XCTAssertEqual(libraryTableView.numberOfRows(inSection: 1), 1)
+    }
 
 }
