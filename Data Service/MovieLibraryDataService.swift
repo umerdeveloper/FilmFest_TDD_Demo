@@ -8,25 +8,30 @@ class MovieLibraryDataService: NSObject, UITableViewDataSource, UITableViewDeleg
     var movieManager: MovieManager?
     
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let movieManager = movieManager else { return 0 }
         guard let librarySection = LibrarySection(rawValue: section) else { fatalError() }
         
         switch librarySection {
-            case .MovieSeen:
-                return movieManager.moviesSeenCount
-            case .MovieToSee:
-                return movieManager.moviesToSeeCount
+            case .MovieSeen: return movieManager.moviesSeenCount
+            case .MovieToSee: return movieManager.moviesToSeeCount
         }
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCellID", for: indexPath) as! MovieCell
+        
+        guard let movieManager = movieManager else { fatalError() }
+        guard let librarySection = LibrarySection(rawValue: indexPath.section) else { fatalError() }
+        
+        let movieData = librarySection.rawValue == 0 ? movieManager.movieAtIndex(index: indexPath.row): movieManager.checkedOffMovieAtIndex(index: indexPath.row)
+        
+        cell.configMovieCell(movie: movieData)
+        
+        return cell
     }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-    
-
 }

@@ -20,6 +20,8 @@
 		CB5C400F242A47C000E5A2F2 /* LibraryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C400E242A47C000E5A2F2 /* LibraryViewControllerTests.swift */; };
 		CB5C4012242A4BE500E5A2F2 /* MovieLibraryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C4011242A4BE500E5A2F2 /* MovieLibraryDataService.swift */; };
 		CB5C4015242A530900E5A2F2 /* MovieLibraryDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C4014242A530900E5A2F2 /* MovieLibraryDataServiceTests.swift */; };
+		CB5C4018242A763E00E5A2F2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C4017242A763E00E5A2F2 /* MovieCell.swift */; };
+		CBDE20B8242C7AA100D1A764 /* MockExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE20B7242C7AA100D1A764 /* MockExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		CB5C400E242A47C000E5A2F2 /* LibraryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewControllerTests.swift; sourceTree = "<group>"; };
 		CB5C4011242A4BE500E5A2F2 /* MovieLibraryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLibraryDataService.swift; sourceTree = "<group>"; };
 		CB5C4014242A530900E5A2F2 /* MovieLibraryDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLibraryDataServiceTests.swift; sourceTree = "<group>"; };
+		CB5C4017242A763E00E5A2F2 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		CBDE20B7242C7AA100D1A764 /* MockExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		CB1E23572429C9C4007070A7 = {
 			isa = PBXGroup;
 			children = (
+				CB5C4016242A762500E5A2F2 /* New Group */,
 				CB5C4010242A4BC300E5A2F2 /* Data Service */,
 				CB1E23622429C9C4007070A7 /* FilmFest_TDD_Demo */,
 				CB1E23792429C9C5007070A7 /* FilmFest_TDD_DemoTests */,
@@ -104,6 +109,7 @@
 		CB1E23792429C9C5007070A7 /* FilmFest_TDD_DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBDE20B6242C7A8E00D1A764 /* Mocks */,
 				CB5C4013242A52E300E5A2F2 /* Test Data Service */,
 				CB1E238F2429D51F007070A7 /* Test Controllers */,
 				CB1E238E2429D513007070A7 /* Test Models */,
@@ -144,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				CB1E23692429C9C4007070A7 /* Main.storyboard */,
+				CB5C4017242A763E00E5A2F2 /* MovieCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +186,21 @@
 				CB5C4014242A530900E5A2F2 /* MovieLibraryDataServiceTests.swift */,
 			);
 			path = "Test Data Service";
+			sourceTree = "<group>";
+		};
+		CB5C4016242A762500E5A2F2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CBDE20B6242C7A8E00D1A764 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CBDE20B7242C7AA100D1A764 /* MockExtensions.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5C4018242A763E00E5A2F2 /* MovieCell.swift in Sources */,
 				CB1E23682429C9C4007070A7 /* LibraryViewController.swift in Sources */,
 				CB1E23642429C9C4007070A7 /* AppDelegate.swift in Sources */,
 				CB5C4012242A4BE500E5A2F2 /* MovieLibraryDataService.swift in Sources */,
@@ -299,6 +322,7 @@
 				CB5C4015242A530900E5A2F2 /* MovieLibraryDataServiceTests.swift in Sources */,
 				CB1E23912429D60B007070A7 /* MovieManagerTests.swift in Sources */,
 				CB1E23882429CE7C007070A7 /* MovieStructsTest.swift in Sources */,
+				CBDE20B8242C7AA100D1A764 /* MockExtensions.swift in Sources */,
 				CB5C400F242A47C000E5A2F2 /* LibraryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.developers.FilmFest-TDD-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -479,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.developers.FilmFest-TDD-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
